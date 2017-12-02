@@ -1,0 +1,728 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/****************************************************************
+GENERAL SELECTORS
+****************************************************************/
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.clearFix {
+  clear: both;
+}
+
+.btn {
+    background-repeat: no-repeat;
+    background-color: #E57E31;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    letter-spacing: 3px;
+    padding: 6px 36px 6px 36px;
+    margin: 25px 20px;
+    border: solid #0d0d0d 1px;
+}
+
+.btn:hover {
+    background-color: #AAAAAA;
+}
+
+.btn:active {
+    background-color: #555555;
+}
+
+.textBox {
+    width: 250px;
+    height: 20px;
+    border-radius: 3px;
+    margin: 10px 25px;
+}
+.textBox:active {
+    border: 2px solid;
+}
+.clickable{
+    cursor: pointer;
+}
+
+
+/****************************************************************
+HEADLINE
+****************************************************************/
+
+.leftText {
+  font-weight: bold;
+  line-height: 100px;
+  margin-left: 32px;
+}
+
+#topLeft {
+  height: 100px;
+  width: 18%;
+  color: white;
+  float: left;
+  background-color: #E57E31;
+}
+
+#headline {
+  float: right;
+  width: 82%;
+  height: 100px;
+  color: #555555;
+}
+
+.headText {
+  line-height: 100px;
+  margin-left: 40px;
+  font-size: 2em;
+}
+
+.leftSide {
+  float: left;
+  display: inline-block;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.rightSide {
+  float: right;
+  display: inline-block;
+}
+.rightSide ul li {
+  display: inline-block;
+  padding-right: 25px;
+  margin-left: 25px;
+  padding-top:14px;
+  padding-bottom: 14px;
+  margin-top: 22px;
+}
+.settingsLi {
+    background-image: 
+        linear-gradient(#FFFFFF, #FFFFFF),
+        linear-gradient(#555555, #AAAAAA)
+    ;
+    background-size:1px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+}
+
+/****************************************************************
+MENU BAR
+****************************************************************/
+
+.wrapper {
+  position: relative;
+}
+
+.fullMenu {
+  float: left;
+  width: 18%;
+  background-color: #293541;
+  color: #767B81;
+  min-height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.fullMenu ul {
+  margin-top: 40px;
+  margin-left: 32px;
+  list-style: none;
+}
+.fullMenu ul li {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 32px;
+  margin-top: 2px;
+  font-weight: bold;
+  width: 73.6%;
+  border-bottom: 1px solid #36434C;
+}
+.aboveSelected {
+  border-bottom: none !important;
+}
+.fullMenu ul li a{
+  color: #767B81;
+  text-decoration: none;
+}
+.fullMenu ul a {
+  color: #767B81;
+  text-decoration: none;
+}
+.fullMenu ul a li:hover {
+  background-color: #F2F3F8;
+  color: #4E525E;
+  border-radius: 3px;
+  padding-left: 5px;
+  width: 73.6%;
+}
+.fullMenu ul a li:active {
+  background-color: #D2D3D8;
+  color: #4E525E;
+  border-radius: 3px;
+  padding-left: 5px;
+  width: 73.6%;
+}
+.selected {
+  padding-left: 5px;
+  width: 450px;
+  color: #FFFFFF;
+  background-color: #767B81;
+  border-radius: 3px;
+}
+
+/****************************************************************
+MAIN CONTENT
+****************************************************************/
+
+#newContent {
+  background-color: #F2F3F8;
+  float: right;
+  width: 82%;
+  min-height: 1000px;
+  color: #4E525E;
+}
+
+#newContent div {
+  margin-left: 40px;
+  padding-top: 40px;
+}
+
+.date {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 6px;
+}
+.comp, .trig, .new {
+  display: inline-block;
+  padding: 4px 20px;
+  background-color: #F2EAE8;
+  margin: 0 40px 20px 0;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.comp, .trig {
+    color: #4E525E;
+}
+.new {
+  background-color: #E57E31;
+  color: white;
+}
+#topBar ul li {
+  line-height: 2em;
+  color: #0021b4;
+}
+#topBar ul li a:hover {
+  color: #0053E4;
+}
+#topBar ul li a:active {
+  color: #0011C4;
+}
+
+/****************************************************************
+FOOTER
+****************************************************************/
+
+#footer {
+  border-top: 1px solid #767B81;
+  height: 100px;
+  line-height: 2.0;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  background-color: #293541;
+  color: #767B81;
+  clear: both;
+  width: 100%;
+  z-index: 2;
+}
+
+/****************************************************************
+COMPANIES PAGE
+****************************************************************/
+.del {
+    background: url("../Images/garbage.svg") no-repeat;
+    background-size: contain;
+    background-color: #E57E31;
+    background-position-x: 4px;
+}
+/****************************************************************
+TRIGGERS PAGE
+****************************************************************/
+.hiring {
+    background: url("../Images/hiring2.svg") no-repeat;
+    background-size: contain;
+    background-color: #E57E31;
+    background-position-x: 4px;
+}
+.contracts {
+    background: url("../Images/contract.svg") no-repeat;
+    background-size: contain;
+    background-color: #E57E31;
+    background-position-x: 4px;
+}
+.training {
+    background: url("../Images/graduation.svg") no-repeat;
+    background-size: contain;
+    background-color: #E57E31;
+    background-position-x: 4px;
+}
+.sales {
+    background: url("../Images/growth.svg") no-repeat;
+    background-size: contain;
+    background-color: #E57E31;
+    background-position-x: 4px;
+}
+.location {
+    background: url("../Images/location.svg") no-repeat;
+    background-size: contain;
+    background-color: #E57E31;
+    background-position-x: 4px;
+}
+.merger {
+    background: url("../Images/handshake.svg") no-repeat;
+    background-size: contain;
+    background-color: #E57E31;
+    background-position-x: 4px;
+}
+.cfo {
+    background: url("../Images/coins.svg") no-repeat;
+    background-size: contain;
+    background-color: #E57E31;
+    background-position-x: 4px;
+}
+
+/****************************************************************
+LANDING PAGE
+****************************************************************/
+header {
+  width: 100%;
+    display: block;
+  position: relative;
+  min-height: 500px;
+}
+
+header::after {
+  content: "";
+  background: url("http://www.whatshouldibuyfor.com/images/trigland2.jpg");
+  opacity: 0.65;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+#alertDisplay {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+#alertDisplay::after {
+  content: "";
+  background: url("http://www.whatshouldibuyfor.com/images/triglandphone.jpg");
+  opacity: 0.5;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;     
+}
+.topline {
+  width: 100%;
+  min-height: 40px;
+  font-weight: 300;
+  font-size: 45px;
+  background-color: white;
+  color: #555555;
+}
+.topline h2 {
+  display: inline;
+  vertical-align: center;
+  border: 0;
+  padding: 0;
+}
+.logo {
+  width: 50px;
+  margin: 10px 40px 0 40px;
+}
+
+header h1, #registerDiv h1, #alertDisplay h1 {
+  font-size: 3em;
+  color: #333333;
+  padding: 20px;
+}
+header h2, #registerDiv h2, #alertDisplay h2, .point h2 {
+  font-size: 2em;
+  color: #333333;
+  padding: 10px 20px;
+  line-height: 1.5;
+}
+.point {
+  padding-top: 75px;
+  width: 40%;
+  margin-left: 10%;
+  text-align: center;
+  padding-bottom: 75px;
+}
+#registerDiv {
+  background-color: #F2F3F8;
+  padding-left: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25%;
+  color: #4E525E;
+}
+.breakDiv {
+  background-color: #F2F3F8;
+  padding-left: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10%;
+  color: #4E525E;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.moveDown {
+  padding-top: 15px;
+}
+.textTop {
+  display: inline-block;
+  float: left;
+  width: 250px;
+  'width: 60%
+  height: 20px;
+  border-radius: 3px;
+  margin: 15px 15px;
+}
+.textTop:active {
+  border: 2px solid;
+}
+.btnTop {
+  display: inline-block;
+  float: left;
+  margin: 8px 15px;
+      background-repeat: no-repeat;
+    background-color: #E57E31;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    letter-spacing: 3px;
+    border: solid #0d0d0d 1px;
+}
+.btnTop:hover {
+  background-color: #AAAAAA;
+}
+.btnTop:active {
+  background-color: #555555;
+}
+.icon2 {
+  width: 50px;
+  display: inline-block;
+}
+.point ul li h2 {
+  display: inline-block;
+}
+.point ul li {
+  margin-top: 15px;
+}
+
+/****************************************************************
+Added 3-1-2016
+****************************************************************/
+
+.btnBlog {
+  display: inline-block;
+  float: left;
+  margin: 8px 15px;
+      background-repeat: no-repeat;
+    background-color: #E57E31;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    letter-spacing: 3px;
+    border: solid #0d0d0d 1px;
+}
+.btnBlog:hover {
+  background-color: #AAAAAA;
+}
+.btnBlog:active {
+        background-color: #555555;
+}
+.newPoint {
+    padding-top: 35px;
+  width: 100%;
+  margin-left: 0;
+  padding-bottom: 35px;
+}
+/*Check out breakDiv in all breakpoints, as well as .newPoint h2 */
+.newPoint p {
+  font-size: 1.2em;
+  line-height:1.2;
+  padding: 20px 0;
+}
+.newPoint h2 {
+  font-size: 2em;
+  color: #333333;
+  padding: 10px 0;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.newPoint a {
+   color: #E57E31; 
+}
+#topBar h3 {
+  font-size: 2em;
+  color: #333333;
+  padding: 10px 0;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/****************************************************************
+Signup Page
+****************************************************************/
+
+#signupLanding {
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 50px;
+  float: left;
+  width: 100%;
+  background-color: #F2F3F8;
+  min-height: 900px;
+}
+
+#signupLanding h1 {
+  text-align: center;
+}
+
+#signupLanding h2 {
+  text-align: center;
+  margin: -25px 0 25px 0;
+}
+
+#paypalForm {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+
+/****************************************************************
+TABLET STYLE
+****************************************************************/
+@media screen and (max-width:1350px)
+{
+  .textTop {
+    width: 100px;
+  }
+  .btnTop {
+    width: 100px;
+  }
+}
+@media screen and (max-width:900px)
+{
+  .textTop, .btnTop {
+    display: block;
+    width: 90%;
+  }
+  #content {
+    margin-top: 220px;
+  }
+  .point {
+    padding: 10px;
+    margin:5%;
+    width:90%;
+  }
+  header h1, #registerDiv h1, #alertDisplay h1 {
+  font-size: 2em;
+  }
+  #registerDiv h1 {
+    padding: 5px;
+  }
+  .moveDown {
+    padding-top:0;
+  }
+  header::after {
+    background-repeat: no-repeat;
+    background-size: 120%;
+    min-height: 0;
+  }
+  header {
+    margin-top: 75px;
+    min-height: 0;
+  }
+  #alertDisplay::after {
+    background-repeat: no-repeat;
+    background-size: 120%;
+  }
+  .breakDiv {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .topline div {
+    
+  }
+  .left, .right {
+    float: none;
+  }
+  body {
+    background-color: #F2F3F8
+  }
+}
+@media screen and (max-width:1150px)
+{
+  .headText {display: none;}
+  #topLeft, .fullMenu {width: 30%;}
+  #headline {width: 70%;}
+  #newContent {width: 70%;}
+}
+
+/****************************************************************
+MOBILE STYLE
+****************************************************************/
+
+@media screen and (max-width:650px)
+{
+
+  .mobileHidden {
+      display: none;
+  }
+
+  #alertDisplay::after {
+  content: "";
+  background: #AAAAAA;
+  opacity: 0.5;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;     
+}
+  #topLeft {width: 40%;}
+  #headline {width: 60%; 
+    background-color: #E57E31;
+  color: white;}
+  .fullMenu {width: 100%;
+  clear: both;
+    min-height: 0;
+  }
+  .fullMenu ul {
+    margin: 0;}
+  .fullMenu ul li {
+    font-weight: normal;
+    text-align:center;
+    font-size:0.8em;
+     border-bottom: none !important;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 2.5%;
+    min-height: 0;
+    width: 20%;
+  }
+  .fullMenu ul a li:hover{
+    width: 20%;
+  }
+  .selected {
+    padding-left: 0;
+    width: 20%;
+    color: #FFFFFF;
+    background-color: #767B81;
+    border-radius: 0;
+    height: 100%;
+  }
+  #newContent{
+    width:100%;
+    margin-top: 20px;
+  }
+  .new, .comp, .trig {
+    margin: 5px;
+  }
+  .rightSide ul li {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  .settingsLi {
+    background-image: 
+        linear-gradient(#E57E31, #E57E31),
+        linear-gradient(#555555, #AAAAAA)
+    ;
+    background-size:1px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+  }
+}
+
+/****************************************************************
+"Blog" Button Fix
+****************************************************************/
+
+@media screen and (max-width:500px)
+{
+  .btnBlog {
+    display: block;
+    width: 90%;
+  }
+}

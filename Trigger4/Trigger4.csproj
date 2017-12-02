@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87669670-EC28-48F6-9105-055F401C2C70}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Trigger4</RootNamespace>
+    <AssemblyName>Trigger4</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Braintree-2.63.0">
+      <HintPath>..\packages\Braintree.2.63.0\lib\Braintree-2.63.0.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AddPost.aspx" />
+    <Content Include="Admin\EditCompany.aspx" />
+    <Content Include="Admin\EditResult.aspx" />
+    <Content Include="Admin\EditUser.aspx" />
+    <Content Include="Admin\EmailList.aspx" />
+    <Content Include="Admin\FindResults.aspx" />
+    <Content Include="Admin\ManageResults.aspx" />
+    <Content Include="Admin\ManageUsers.aspx" />
+    <Content Include="Admin\ViewPosts.aspx" />
+    <Content Include="Alerts.aspx" />
+    <Content Include="BlogModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BlogModel.edmx</DependentUpon>
+      <LastGenOutput>BlogModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BlogModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BlogModel.edmx</DependentUpon>
+      <LastGenOutput>BlogModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Blog\Blog.aspx" />
+    <Content Include="Blog\stream.aspx" />
+    <Content Include="ca.aspx" />
+    <Content Include="Companies.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\add.svg" />
+    <Content Include="Images\ajaxprogress.gif" />
+    <Content Include="Images\bbell.png" />
+    <Content Include="Images\bbellblack.png" />
+    <Content Include="Images\calendar.svg" />
+    <Content Include="Images\cloud.png" />
+    <Content Include="Images\cloudblack.png" />
+    <Content Include="Images\coins.svg" />
+    <Content Include="Images\contract.svg" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\garbage.svg" />
+    <Content Include="Images\gear.svg" />
+    <Content Include="Images\gears.svg" />
+    <Content Include="Images\graduation.svg" />
+    <Content Include="Images\growth.svg" />
+    <Content Include="Images\handshake.svg" />
+    <Content Include="Images\hiring2.svg" />
+    <Content Include="Images\home.svg" />
+    <Content Include="Images\homepage.png" />
+    <Content Include="Images\linkedin.png" />
+    <Content Include="Images\location.svg" />
+    <Content Include="Images\mag_glass.png" />
+    <Content Include="Images\mag_glassblack.png" />
+    <Content Include="Images\menu.png" />
+    <Content Include="Images\menublack.png" />
+    <Content Include="Images\money.png" />
+    <Content Include="Images\moneyblack.png" />
+    <Content Include="Images\newspaper.svg" />
+    <Content Include="Images\progress.svg" />
+    <Content Include="Images\teacher.svg" />
+    <Content Include="Images\tficon.ico" />
+    <Content Include="Images\tflogocolor3.png" />
+    <Content Include="Images\trigland2.jpg" />
+    <Content Include="Images\triglandphone.jpg" />
+    <Content Include="Images\Twitter.png" />
+    <Content Include="Images\user.svg" />
+    <Content Include="Images\workers.svg" />
+    <Content Include="Images\x.png" />
+    <Content Include="Images\xblack.png" />
+    <Content Include="Index.html" />
+    <Content Include="JS\EditList.js" />
+    <Content Include="JS\TriggerFind.js" />
+    <Content Include="JS\TriggerFind2.js" />
+    <Content Include="JS\TriggerFindBing.js" />
+    <Content Include="Main.aspx" />
+    <Content Include="paymenttest.aspx" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="Settings.aspx" />
+    <Content Include="signup.aspx" />
+    <Content Include="signup.html" />
+    <Content Include="Styles\NewTrigger.css" />
+    <Content Include="Styles\trigger.css" />
+    <Content Include="Styles\triggerdash.css" />
+    <Content Include="Styles\triggerwhite.css" />
+    <Content Include="Success.aspx" />
+    <Content Include="Tasks\DeleteOld.aspx" />
+    <Content Include="Tasks\FindResults.aspx" />
+    <Content Include="Tasks\FixCommas.aspx" />
+    <Content Include="TF.aspx" />
+    <Content Include="Triggers.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddPost.aspx.cs">
+      <DependentUpon>AddPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddPost.aspx.designer.cs">
+      <DependentUpon>AddPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditCompany.aspx.cs">
+      <DependentUpon>EditCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditCompany.aspx.designer.cs">
+      <DependentUpon>EditCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditResult.aspx.cs">
+      <DependentUpon>EditResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditResult.aspx.designer.cs">
+      <DependentUpon>EditResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EmailList.aspx.cs">
+      <DependentUpon>EmailList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EmailList.aspx.designer.cs">
+      <DependentUpon>EmailList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FindResults.aspx.cs">
+      <DependentUpon>FindResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FindResults.aspx.designer.cs">
+      <DependentUpon>FindResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageResults.aspx.cs">
+      <DependentUpon>ManageResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageResults.aspx.designer.cs">
+      <DependentUpon>ManageResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageUsers.aspx.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageUsers.aspx.designer.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewPosts.aspx.cs">
+      <DependentUpon>ViewPosts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewPosts.aspx.designer.cs">
+      <DependentUpon>ViewPosts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alerts.aspx.cs">
+      <DependentUpon>Alerts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alerts.aspx.designer.cs">
+      <DependentUpon>Alerts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Models\CommentModel.cs" />
+    <Compile Include="App_Code\Models\CompanyModel.cs" />
+    <Compile Include="App_Code\Models\EmailListModel.cs" />
+    <Compile Include="App_Code\Models\MyUserModel.cs" />
+    <Compile Include="App_Code\Models\PostModel.cs" />
+    <Compile Include="App_Code\Models\ResultModel.cs" />
+    <Compile Include="App_Code\Models\TagModel.cs" />
+    <Compile Include="ca.aspx.cs">
+      <DependentUpon>ca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ca.aspx.designer.cs">
+      <DependentUpon>ca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Companies.aspx.cs">
+      <DependentUpon>Companies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Companies.aspx.designer.cs">
+      <DependentUpon>Companies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\ResultsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="paymenttest.aspx.cs">
+      <DependentUpon>paymenttest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paymenttest.aspx.designer.cs">
+      <DependentUpon>paymenttest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Success.aspx.cs">
+      <DependentUpon>Success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Success.aspx.designer.cs">
+      <DependentUpon>Success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\DeleteOld.aspx.cs">
+      <DependentUpon>DeleteOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\DeleteOld.aspx.designer.cs">
+      <DependentUpon>DeleteOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\FindResults.aspx.cs">
+      <DependentUpon>FindResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\FindResults.aspx.designer.cs">
+      <DependentUpon>FindResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\FixCommas.aspx.cs">
+      <DependentUpon>FixCommas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\FixCommas.aspx.designer.cs">
+      <DependentUpon>FixCommas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Triggers.aspx.cs">
+      <DependentUpon>Triggers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Triggers.aspx.designer.cs">
+      <DependentUpon>Triggers.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\Startup1.cs" />
+    <Compile Include="AspNetUser.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BingSearchContainer.cs" />
+    <Compile Include="BlogModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlogModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BlogModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BlogModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlogModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog\Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog\Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog\stream.aspx.cs">
+      <DependentUpon>stream.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog\stream.aspx.designer.cs">
+      <DependentUpon>stream.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Company.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmailList.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyUser.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="New.Master.cs">
+      <DependentUpon>New.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="New.Master.designer.cs">
+      <DependentUpon>New.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Post.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tag.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TF.aspx.cs">
+      <DependentUpon>TF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TF.aspx.designer.cs">
+      <DependentUpon>TF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trigger.Master.cs">
+      <DependentUpon>Trigger.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trigger.Master.designer.cs">
+      <DependentUpon>Trigger.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Trigger.Master" />
+    <Content Include="PHP\mailinglist.php">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PHP\triggercontact.php" />
+    <Content Include="libs\phpmailer\class.phpmailer.php" />
+    <Content Include="libs\phpmailer\class.pop3.php" />
+    <Content Include="libs\phpmailer\class.smtp.php" />
+    <Content Include="libs\phpmailer\PHPMailerAutoload.php" />
+    <Content Include="packages.config" />
+    <EntityDeploy Include="BlogModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BlogModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="BlogModel.edmx.diagram">
+      <DependentUpon>BlogModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="PHP\bing_proxy.php" />
+    <Content Include="bing_proxy.php">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="New.Master" />
+    <None Include="Properties\PublishProfiles\triggerfind.com - Web Deploy.pubxml" />
+    <Content Include="triggercontact.php" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51881</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51881/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

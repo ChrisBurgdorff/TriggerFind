@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Trigger.master.cs" Inherits="Trigger4.Trigger" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/tficon.ico" />
+    <link href="~/Styles/triggerwhite.css" rel="stylesheet" type="text/css">
+    <title>Trigger Find</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/JS/TriggerFindBing.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-67269200-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- contact form went here, starting with three divs-->
+    <div id="errorBox" class="popup">
+        <div id="errorWrapper">
+            <div id="errorContainer">
+                <img src="http://www.triggerfind.com/images/x.png" id="closeError">
+                <h2>Please Select A Trigger</h2>
+                <h2>Enter A Company In The Search Box</h2>
+            </div>
+        </div>
+    </div>
+    <div id="aboutBox" class="popup">
+        <div id="aboutWrapper">
+            <div id="aboutContainer">
+                <img src="http://www.triggerfind.com/images/x.png" id="closeAbout">
+                <h2>About Trigger Find</h2>
+                <p>The faster you know what your target accounts are doing, the faster you can offer them something of value! TriggerFind lets you enter a company name, select a key trigger event, and immediately receive current, business-specific results! </p>
+            </div>
+        </div>
+    </div>
+    <div class="fullMenu">
+        <ul id="menuList">
+            <li><a href="/Main.aspx">Home</a></li>
+            <li class="about">About</li>
+            <li><a href="/triggerblog/">Blog</a></li>
+            <li class="contact">Contact</li>
+        </ul>
+    </div>
+    <div id="menuBar">
+        <a href="/Main.aspx"><h1 id="title">Trigger Find</h1></a>
+        <h2 id="tagline">
+            Free, Business-Only News About Your Customers And Prospects
+        </h2>
+        <div id="menuIcons"><img src="http://www.triggerfind.com/images/menublack.png" id="menuImage"></div>
+        <div id="navcontainer">
+            <ul>
+               <li class="contact"><h2>Contact</h2></li>
+               <li><h2><a href="/triggerblog/">Blog</a></h2></li>
+               <li class="about"><h2>About</h2></li>
+            </ul>
+        </div>
+    </div>
+    <div id="blogContent">   
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+        </div>  
+    <div id="footer">
+        Get In Touch
+        <br>
+        <a href="https://twitter.com/TriggerFind">Twitter</a>
+        <a href="mailto:contact@triggerfind.com">Email</a>
+        <br>
+        <a href="<%= Page.ResolveUrl("~/Admin/ViewPosts.aspx") %>"><h3>&copy; 2015 TriggerFind.com</h3></a>
+    </div>
+</body>
+</html>

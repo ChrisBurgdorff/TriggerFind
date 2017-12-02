@@ -1,0 +1,994 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* --------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------
+    STUFF ADDED FOR GRID VIEW
+*/
+.mydatagrid
+{
+    width: 80%;
+    border: solid 2px black;
+    min-width: 80%;
+}
+.mydatagrid>tbody>tr>td /* Apply border to all cells */
+{
+   border:1px solid black;
+}
+.header
+{
+    background-color: #000;
+    font-family: Arial;
+    color: White;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+.rows
+{
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    color: #000;
+    min-height: 25px;
+    text-align: left;
+}
+.rows:hover
+{
+    background-color: #22c81a;
+}
+.mydatagrid a /** FOR THE PAGING ICONS  **/
+{
+    background-color: Transparent;
+    padding: 5px 5px 5px 5px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.mydatagrid a:hover /** FOR THE PAGING ICONS  HOVER STYLES**/
+{
+    background-color: #fff;
+    color: #000;
+}
+.mydatagrid span /** FOR THE PAGING ICONS CURRENT PAGE INDICATOR **/
+{
+    padding: 5px 5px 5px 5px;
+    background-color: #000;
+    color: #fff;
+}
+.pager
+{
+        background-color: #22c81a;
+    font-family: Arial;
+    color: White;
+    height: 30px;
+    text-align: left;
+}
+.mydatagrid td
+{
+    padding: 5px;
+}
+.mydatagrid th
+{
+    padding: 5px;
+}
+/*---------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------
+    End of stuff added for grid view
+*/
+/* Top Menu stuff*/
+
+#errorBox {
+    display: none;
+}
+
+#navcontainer {
+    margin-top: 16px;
+    margin-right: 150px;
+}
+
+#navcontainer ul li { 
+    float: right; 
+    clear: none;
+    margin: 10px;
+    cursor: pointer;
+}		
+
+#navcontainer ul {
+ 
+}
+
+#navcontainer h2 {
+    font-size: 26px;
+}
+
+#navcontainer ul li:hover {
+    color: #88ff00;
+}
+
+#navcontainer ul li a:hover {
+    color: #88ff00;
+}
+
+#navcontainer ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*End top menu stuff*/
+
+/*Blog stuff*/
+
+.blogAds {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blogAd {
+    margin: 8px;
+}
+
+.comments {
+    width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 120%;
+  background-color: #e4e4e4;
+  color: #0d0d0d;
+  margin-bottom: 70px;
+  display: none;
+}
+
+.comments p {
+    width: 80%;
+    position: relative;
+}
+
+.commentsLink {
+    color: #88ff00;
+    padding: 5px;
+}
+
+.commentsLink:hover {
+    color: white;
+}
+
+.commentBox {
+    padding: 5px;
+}
+
+.shareButtons a {
+    padding: 10px;
+}
+
+.shareButtons {
+    padding: 10px;
+    border: 10px hidden;
+    display: inline-block;
+}
+
+.addCommentLink {
+    color: #0d0d0d;
+    padding: 5px;
+}
+
+.addCommentLink:hover {
+    color: #88ff00;
+}
+
+.name {
+    color: #88ff00;
+}
+
+.comments h2 {
+  font-size: 28px;
+}
+
+.comments h3 {
+  font-size: 20px;
+}
+
+.labels {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+    color: #0d0d0d;
+    padding: 5px;
+}
+
+.commentMaker {
+    display: none;
+}
+
+.blog {
+  margin-top: 100px;
+  width: 70%;
+  float: left;
+  margin-left: 5%;
+  padding: 20px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 120%;
+  background-color: #e4e4e4;
+  color: #0d0d0d;
+  margin-bottom: 70px;
+}
+
+.blog h2 {
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.postTitle {
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.blog h3 {
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.date {
+  width: 10%;
+  background-color: #FFFFFF;
+  float: left;
+  margin-left: -50px;
+  text-align: center;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  background-color: rgba(0,0,0,.6);
+}
+
+.sidebarBlog {
+    margin-top: 100px;
+    float: right;
+    width: 15%;
+  margin-right: 15px;
+  padding: 20px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 140%;
+  background-color: #e4e4e4;
+  color: #0d0d0d;
+}
+
+.sidebarLink {
+    color: #0d0d0d;
+    padding: 8px;
+}
+
+.sidebarLink:hover {
+    color: #88ff00;
+}
+
+#searchStuff {
+    clear: left;
+}
+
+/*End of Blog Stuff*/
+
+/*STUFF ADDED FOR WORDPRESS -------------------------------------------------------------------*/
+p {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+small, p.postMeta {
+  font-family: Helvetica, sans-serif;
+  line-height: 2.0;
+}
+
+#recent-posts-2 {
+  font-family: Helvetica, sans-serif;
+}
+#recent-comments-2 {
+  font-family: Helvetica, sans-serif;
+}
+#archives-2{
+  font-family: Helvetica, sans-serif;
+}
+#categories-2{
+  font-family: Helvetica, sans-serif;
+}
+#recent-posts-2 ul li {
+  font-family: Helvetica, sans-serif;
+list-style-type: none;
+}
+#recent-comments-2 ul li {
+  font-family: Helvetica, sans-serif;
+list-style-type: none;
+}
+#archives-2 ul li {
+  font-family: Helvetica, sans-serif;
+list-style-type: none;
+}
+#categories-2 ul li {
+  font-family: Helvetica, sans-serif;
+list-style-type: none;
+}
+.label {
+font-family: Helvetica, sans-serif;
+}
+/*END OF STUFF ADDED FOR WORDPRESS ----------------------------------------------------------*/
+
+/*AHHHHH*/
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.2;
+  color: #0d0d0d;
+  background-color: #f8f8f8;
+}
+
+.fullMenu {
+  display: none;
+  height: 100%;
+  background-color: #e4e4e4;
+  color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 350px;
+}
+
+#menuList{
+font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;  
+  list-style-type: none;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#menuList li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#menuList a, li{
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+#menuList a:hover {
+  color: #88ff00;
+}
+
+#menuList li:hover {
+  color: #88ff00;
+}
+
+#menuImage {
+  height: 46px;
+  width: 46px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor:pointer;
+}
+
+#footer a:link,
+#footer a:hover,
+#footer a:visited {
+  color: #0d0d0d;
+  text-decoration: none;
+  padding-left: 15px;
+}
+#footer h3 {
+  font-size: 12px;
+  float: right;
+  padding-right: 10px;
+}
+
+#search {
+  display: inline-block;
+  height: 29px;
+  width: 250px;
+}
+#searchInputs {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#searchBtn {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  border-color: #black;
+  background-color: #88ff00;
+  background: url(http://www.triggerfind.com/images/mag_glassblack.png) 4px 4px no-repeat;
+  background-size: 75%;
+  top: 10px;
+}
+
+#footer {
+  height: 60px;
+  position: fixed;
+  background-color: #e4e4e4;
+  color: #0d0d0d;
+  width:100%;
+  vertical-align: center;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+#menuBar {
+  height: 80px;
+  background-color: #e4e4e4;
+  color: #0d0d0d;
+  width: 100%;
+  position: fixed;
+  vertical-align: center;
+  left: 0;
+  top: 0;
+}
+
+#title {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  padding-left: 10px;
+  text-align: auto;
+  float: left;
+}
+
+.loading {
+  text-align: center;
+  width: 100%;
+}
+
+.loader {
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+
+#tagline {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  margin-left: -216px;
+  margin-top: 48px;
+  float: left;
+}
+
+#content {
+  margin-top: 120px;
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 50px;
+  float: left;
+  width: 80%;
+}
+#sidebar {
+  float: right;
+  margin-top: 120px;
+  margin-right: 15px;
+  margin-bottom: 60px;
+  z-index: -1;
+}
+
+.fakead {
+  width: 250px;
+  height: 250px;
+  border: solid 1px;
+  margin-top: 5px;
+}
+
+.steps {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#landingTable {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+#landingTable td {
+  text-align: center;
+  width: 200px;
+}
+
+#landingTable p {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 120%;
+}
+#menuBar a {
+  color: #0d0d0d;
+}
+table#triggerTable {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table#triggerTable td {
+  height: 80px;
+  text-align: center;
+}
+
+button, .btn {
+    background-repeat:no-repeat;
+  background-color: #ffcc66;
+  width: 201px;
+    border: none;
+  color: white;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  letter-spacing: 3px;
+  padding: 6px 6px 6px 9px;
+  border: solid #0d0d0d 1px;
+}
+
+.hiring {
+  background-color: #900000;
+}
+
+.merger {
+  background-color: #004400;
+}
+
+.sales {
+  background-color: #003380;
+}
+
+.contracts {
+  background-color: #b84a00;
+}
+
+.training {
+  background-color: #CCA300;
+}
+
+.location {
+  background-color: #6a00d4;
+}
+
+.cfo {
+  background-color: #007f80;
+}
+
+.all {
+  background-color: #9999ff;
+}
+
+.btn:hover {
+  background-color: #4C4C4C;
+}
+
+button:hover {
+  background-color: #4C4C4C;
+}
+
+#nothing {
+  display: none;
+}
+
+#alerts {
+  display: none;
+}
+
+#alerts h2 {
+  cursor: pointer;
+}
+
+#alerts h2:hover {
+  color: #88ff00;
+}
+
+#results a {
+  padding: 5px;
+  color: #0d0d0d;
+  text-decoration: none;
+}
+#results a:hover {
+  color: #88ff00; 
+}
+
+#results ul li {
+    padding: 10px;
+}
+
+#results li {
+    padding-bottom: 10px;
+}
+
+
+#contactBox a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+
+#contactBox a:hover {
+  color: #88ff00;
+}
+
+#results {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;  
+  list-style-type: none;
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e4e4e4;
+  width: 100%;
+  height: 100%;
+  color: #e4e4e4;
+}
+
+#aboutBox, #contactBox {
+  display: none;
+}
+
+#aboutWrapper {
+  width: 500px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+#contactWrapper {
+  width: 650px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+#aboutContainer, #contactContainer {
+  background-color: #22231e; 
+  padding: 12px;
+  text-align: left;
+}
+
+#aboutContainer h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 12px;
+}
+
+#aboutContainer p {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 150%;
+}
+
+#contactContainer h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 12px;
+}
+
+#contactContainer p {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 150%;
+}
+
+#closeAbout, #closeContact {
+  height: 46px;
+  width: 46px;
+  float: right;
+  margin-right: 0px;
+  margin-top: 0px;
+  cursor:pointer;
+}
+
+#mailingContainer {
+  text-align: left;
+  color: white;
+  background-color: #000000;
+  width: 233px;
+  margin-top: 5px;
+  margin-bottom: 60px;
+  padding: 10px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+  line-height: 120%;
+	font-variant: normal;
+	font-weight: 500;
+}
+#mailingContainer h2 {
+  font-size: 18px;
+  color: white;
+}
+
+#mailingContainer input {
+  color: black;
+  border: solid 2px white;
+}
+
+#mailingContainer { 
+  float: left;
+}
+#closeMailing {
+  height: 30px;
+  width: 30px;
+  float: right;
+  cursor: pointer;
+}
+
+#email {
+  width: 250px;
+}
+
+#thankYou {
+  display: none;
+}
+
+#message {
+  width: 250px;
+}
+
+#nothing, #alerts, #results, #newSearch {
+  padding: 20px;
+}
+
+#newSearch {
+  display: none;
+}
+
+#newSearch h2 {
+  cursor: pointer;
+}
+
+#newSearch h2:hover {
+  color: #88ff00;
+}
+
+
+@media screen and (min-width: 904px) {
+    #sidebar {
+    float: right;
+    /* margin-top: 120px;
+    margin-right: 15px; */
+    top: 120px;
+    right: 15px;
+    position: absolute;
+    }
+}
+
+@media screen and (max-width: 960px) {
+        .sidebarBlog {
+        float: none;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        width: 85%;
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 904px) {
+    #sidebar >div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 5px;
+    }
+    body {
+        padding-bottom: 60px;
+    }
+    #navcontainer {
+    display: none;
+  }
+    #sidebar {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 60px;
+    display: block;
+    }
+}
+
+@media screen and (min-width: 1131px) {
+  table#triggerTableTablet {
+    display: none;
+  }
+  #triggerTablePhone {
+    display: none;
+  }
+  #landingTablePhone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 499px) {
+    /*New Stuff*/
+    .blogAds {
+        width: 90%;
+    }
+    .sidebarBlog {
+        float: none;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+    .blog {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #sidebar {
+        float: none;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #content {
+        float: none;
+        width: 100%;
+    }
+    /*End New Stuff*/
+  #tagline {
+    display: none;
+  }
+  #triggerTable {
+    display: none;
+  }
+  #triggerTableTablet {
+    display: none;
+  }
+  #landingTable {
+    display: none;
+  }
+  #landingTablePhone {
+    width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+#landingTablePhone td {
+  text-align: center;
+  width: 200px;
+  height: 80px;
+  vertical-align: center;
+}
+
+#landingTablePhone p {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 120%;
+}
+  #triggerTablePhone {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+    text-align: center;
+  width: 200px;
+  height: 80px;
+}
+
+#triggerTablePhone td {
+  height: 80px;
+  text-align: center;  
+  }
+  
+  #aboutWrapper {
+    width: 350px;
+  }
+  
+  #contactWrapper {
+    width: 350px;
+  }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1130px) {
+  
+  #tagline {
+    display: none;
+  }
+  #triggerTable {
+    display: none;
+  }
+  #triggerTableTablet {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table#triggerTableTablet td {
+  height: 80px;
+  text-align: center;
+  }
+  #landingTablePhone {
+    display: none;
+  }
+  #triggerTablePhone {
+    display: none;
+  }
+  #aboutWrapper {
+    width: 450px;
+  }
+  
+  #contactWrapper {
+    width: 450px;
+  }
+}

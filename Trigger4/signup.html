@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/tficon.ico" />
+    <link href="/Styles/triggerdash.css" rel="stylesheet" type="text/css">
+    <title>Trigger Find</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/JS/TriggerFindBing.js"></script>
+    <script type="text/javascript" src="/JS/EditList.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-67269200-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- contact form went here, starting with three divs-->
+    <div class="topline">
+        <a href="TF.aspx"><img class="logo" src="http://www.whatshouldibuyfor.com/images/tflogocolor3.png"><h2>Trigger Find</h2></a>
+        <div class="right">
+        </div>
+    </div>
+    <div id="signupLanding">
+        <h1>Select Account Type</h1>
+        <h1>
+            Up to 20 Companies: $9/month or Up to 50 Companies: $19/month<h1>
+                <h1>Select and Click Subscribe Now</h1>
+                <div id="paypalForm">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="R7CSWMXHMW9Q6">
+                        <table>
+                            <tr><td><input type="hidden" name="on0" value=""></td></tr>
+                            <tr>
+                                <td>
+                                    <select name="os0">
+                                        <option value="Follow 20 Companies">Follow 20 Companies : $9.00 USD - monthly</option>
+                                        <option value="Follow 50 Companies">Follow 50 Companies : $19.00 USD - monthly</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+                <h2>You will be redirected to Paypal</h2>
+                <h2>Or Follow Up To 8 Companies For Free:</h2>
+                <a href="Home.aspx"><h2>Continue With Free Account</h2></a>
+    </div>
+    <div class="clearFix"></div>
+
+    <div id="footer">
+        Get In Touch
+        <br>
+        <a href="https://twitter.com/TriggerFind">Twitter</a>
+        <a href="mailto:contact@triggerfind.com">Email</a>
+        <br>
+        <h3>&copy; 2015 TriggerFind.com</h3>
+    </div>
+</body>
+</html>

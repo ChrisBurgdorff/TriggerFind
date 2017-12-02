@@ -1,0 +1,908 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/*AHHHHH*/
+
+.blogAds {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blogAd {
+    margin: 8px;
+}
+
+  /*NEW STUFF*/
+.comments {
+    width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 120%;
+  background-color: #1b1c18;
+  color: #e6e6e6;
+  margin-bottom: 70px;
+  display: none;
+}
+
+.comments p {
+    width: 80%;
+    position: relative;
+}
+
+.commentsLink {
+    color: #88ff00;
+    padding: 5px;
+}
+
+.commentsLink:hover {
+    color: white;
+}
+
+.commentBox {
+    padding: 5px;
+}
+
+.shareButtons a {
+    padding: 10px;
+}
+
+.shareButtons {
+    padding: 10px;
+    border: 10px hidden;
+    display: inline-block;
+}
+
+.addCommentLink {
+    color: #88ff00;
+    padding: 5px;
+}
+
+.addCommentLink:hover {
+    color: white;
+}
+
+.name {
+    color: #88ff00;
+}
+
+.comments h2 {
+  font-size: 28px;
+}
+
+.comments h3 {
+  font-size: 20px;
+}
+
+.labels {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+    color: #e6e6e6;
+    padding: 5px;
+}
+
+.commentMaker {
+    display: none;
+}
+
+.blog {
+  width: 70%;
+  float: left;
+  margin-left: 5%;
+  padding: 20px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 120%;
+  background-color: #1b1c18;
+  color: #e6e6e6;
+  margin-bottom: 70px;
+}
+
+.blog h2 {
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.blog h3 {
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.date {
+  width: 10%;
+  background-color: #FFFFFF;
+  float: left;
+  margin-left: -50px;
+  text-align: center;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  background-color: rgba(0,0,0,.6);
+}
+
+.sidebarBlog {
+    float: right;
+    width: 15%;
+  margin-right: 15px;
+  padding: 20px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 140%;
+  background-color: #1b1c18;
+  color: #e6e6e6;
+}
+
+.sidebarLink {
+    color: #88ff00;
+    padding: 8px;
+}
+
+.sidebarLink:hover {
+    color: white;
+}
+
+#searchStuff {
+    clear: left;
+}
+/*END NEW STUFF*/
+
+body {
+  font: Helvetica, sans-serif;
+  color: white;
+  background-color: #22231e;
+}
+
+.fullMenu {
+    z-index: 400;
+  display: none;
+  height: 100%;
+  background-color: rgba(0,0,0,.6);
+  color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 350px;
+}
+
+#menuList{
+font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;  
+  list-style-type: none;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#menuList li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#menuList a, li{
+  color: white;
+  text-decoration: none;
+}
+
+#menuList a:hover {
+  color: #88ff00;
+}
+
+#menuList li:hover {
+  color: #88ff00;
+}
+
+#menuIcons {
+  height: 46px;
+  width: 46px;
+  float: right;
+  clear: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  }
+
+#menuText {
+    float: right;
+    cursor: pointer;
+}
+
+#menuImage {
+  height: 46px;
+  width: 46px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor:pointer;
+}
+
+#footer a:link,
+#footer a:hover,
+#footer a:visited {
+  color: #585858;
+  text-decoration: none;
+  padding-left: 15px;
+}
+#footer h3 {
+  font-size: 12px;
+  float: right;
+  padding-right: 10px;
+}
+
+#search {
+  display: inline-block;
+  border: none;
+  height: 29px;
+  width: 250px;
+}
+#searchInputs {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+#searchBtn {
+  display: inline-block;
+  /*position: absolute; */
+  width: 31px;
+  height: 31px;
+  border-color: #88ff00;
+  background-color: #88ff00;
+  background: url(http://www.triggerfind.com/images/mag_glass.png) 4px 4px no-repeat;
+  background-size: 75%;
+}
+
+#footer {
+  height: 60px;
+  position: fixed;
+  background-color: rgba(0,0,0,0.6);
+  color: #585858;
+  width:100%;
+  vertical-align: center;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+#menuBar {
+  z-index: 500;
+  height: 80px;
+  background-color: rgba(0,0,0,.6);
+  color: white;
+  width: 100%;
+  position: fixed;
+  vertical-align: center;
+  left: 0;
+  top: 0;
+}
+
+#title {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  padding-left: 10px;
+  text-align: auto;
+  float: left;
+}
+
+.loading {
+  display: none;
+}
+
+h2 {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+
+#navcontainer {
+    margin-top: 16px;
+    margin-right: 150px;
+}
+
+#navcontainer ul li { 
+    float: right; 
+    clear: none;
+    margin: 10px;
+    cursor: pointer;
+}		
+
+#navcontainer ul {
+ 
+}
+
+#navcontainer h2 {
+    font-size: 26px;
+}
+
+#navcontainer ul li:hover {
+    color: #88ff00;
+}
+
+#navcontainer ul li a:hover {
+    color: #88ff00;
+}
+
+#navcontainer ul {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+#tagline {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  margin-left: -216px;
+  margin-top: 48px;
+  float: left;
+}
+
+#content {
+  margin-top: 120px;
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 50px;
+  float: left;
+  width: 80%;
+}
+
+#blogContent {
+  margin-top: 120px;
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 50px;
+  float: left;
+  width: 100%;
+}
+
+.fakead {
+  width: 250px;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.smallad {
+    width:250px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.steps {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#landingTable {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+#landingTable td {
+  text-align: center;
+  width: 200px;
+}
+
+#landingTable p {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 120%;
+}
+#menuBar a {
+  color: white;
+}
+table#triggerTable {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table#triggerTable td {
+  height: 80px;
+  text-align: center;
+}
+
+button, .btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+  width: 201px;
+    border: none;
+  color: #88ff00;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  letter-spacing: 3px;
+  padding: 6px 6px 6px 9px;
+  border: solid #ffffff 1px;
+}
+
+.btn:hover {
+  background-color: #4C4C4C;
+}
+
+button:hover {
+  background-color: #4C4C4C;
+}
+
+#nothing {
+  display: none;
+}
+
+#alerts {
+  display: none;
+}
+
+#alerts h2 {
+  cursor: pointer;
+}
+
+#alerts h2:hover {
+  color: #88ff00;
+}
+
+#results a {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+#results a:hover {
+  color: #88ff00; 
+}
+
+#contactBox a {
+  color: white;
+  text-decoration: none;
+}
+
+#contactBox a:hover {
+  color: #88ff00;
+}
+
+#results {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;  
+  list-style-type: none;
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.95);
+  width: 100%;
+  height: 100%;
+}
+
+#aboutBox, #contactBox, #errorBox {
+  display: none;
+}
+
+#errorWrapper {
+    width: 500px;
+    margin: 120px auto;
+    text-align: center;
+}
+
+#aboutWrapper {
+  width: 500px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+#contactWrapper {
+  width: 650px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+#errorContainer h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 12px;
+}
+
+#aboutContainer, #contactContainer, #errorContainer {
+  background-color: #22231e; 
+  padding: 12px;
+  text-align: left;
+}
+
+#aboutContainer h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 12px;
+}
+
+#aboutContainer p {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 150%;
+}
+
+#contactContainer h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 12px;
+}
+
+#contactContainer p {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 150%;
+}
+
+#closeAbout, #closeContact, #closeError {
+  height: 46px;
+  width: 46px;
+  float: right;
+  margin-right: 0px;
+  margin-top: 0px;
+  cursor:pointer;
+}
+
+#mailingContainer {
+  text-align: left;
+  background-color: #000000;
+  width: 233px;
+  margin-top: 5px;
+  margin-bottom: 60px;
+  padding: 10px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+  line-height: 120%;
+	font-variant: normal;
+	font-weight: 500;
+}
+#mailingContainer h2 {
+  font-size: 18px;
+}
+#mailingContainer { 
+  float: left;
+}
+#closeMailing {
+  height: 30px;
+  width: 30px;
+  float: right;
+  cursor: pointer;
+}
+
+#email {
+  width: 250px;
+}
+
+#thankYou {
+  display: none;
+}
+
+#message {
+  width: 250px;
+}
+
+#nothing, #alerts, #results, #newSearch {
+  padding: 20px;
+}
+
+#newSearch {
+  display: none;
+}
+
+#newSearch h2 {
+  cursor: pointer;
+}
+
+#newSearch h2:hover {
+  color: #88ff00;
+}
+
+.loader {
+  display: none;
+  overflow: hidden;
+  font-size: 10px;
+  margin: 20px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #FFF;
+  background: linear-gradient(to right, #FFF 10%, rgba(255, 255, 255, 0) 45%);
+  position: relative;
+  animation: load3 1.4s infinite linear;
+  transform: translateZ(0);
+
+  &:before {
+    width: 50%;
+    height: 50%;
+    background: #FFF;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+
+  &:after {
+    background: #0dc5c1;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes load3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 904px) {
+    #sidebar {
+    float: right;
+    /* margin-top: 120px;
+    margin-right: 15px; */
+    top: 120px;
+    right: 15px;
+    position: absolute;
+    }
+}
+
+@media screen and (max-width: 960px) {
+        .sidebarBlog {
+        float: none;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        width: 85%;
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 904px) {
+    #sidebar >div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 5px;
+    }
+    body {
+        padding-bottom: 60px;
+    }
+    #navcontainer {
+    display: none;
+  }
+    #sidebar {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 60px;
+    display: block;
+    }
+}
+
+@media screen and (min-width: 1131px) {
+  table#triggerTableTablet {
+    display: none;
+  }
+  #triggerTablePhone {
+    display: none;
+  }
+  #landingTablePhone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 499px) {
+    /*New Stuff*/
+    .blogAds {
+        width: 90%;
+    }
+    .sidebarBlog {
+        float: none;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+    .blog {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #sidebar {
+        float: none;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #content {
+        float: none;
+        width: 100%;
+    }
+    /*End New Stuff*/
+  #tagline {
+    display: none;
+  }
+  #triggerTable {
+    display: none;
+  }
+  #triggerTableTablet {
+    display: none;
+  }
+  #landingTable {
+    display: none;
+  }
+  #landingTablePhone {
+    width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+#landingTablePhone td {
+  text-align: center;
+  width: 200px;
+  height: 80px;
+  vertical-align: center;
+}
+
+#landingTablePhone p {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 120%;
+}
+  #triggerTablePhone {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+    text-align: center;
+  width: 200px;
+  height: 80px;
+}
+
+#triggerTablePhone td {
+  height: 80px;
+  text-align: center;  
+  }
+  
+  #aboutWrapper {
+    width: 350px;
+  }
+  
+  #contactWrapper {
+    width: 350px;
+  }
+  .fullMenu {
+    background-color: rgba(0,0,0,0.95);
+  }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1130px) {
+  
+  #tagline {
+    display: none;
+  }
+  #triggerTable {
+    display: none;
+  }
+  #triggerTableTablet {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table#triggerTableTablet td {
+  height: 80px;
+  text-align: center;
+  }
+  #landingTablePhone {
+    display: none;
+  }
+  #triggerTablePhone {
+    display: none;
+  }
+  #aboutWrapper {
+    width: 450px;
+  }
+  
+  #contactWrapper {
+    width: 450px;
+  }
+}
+

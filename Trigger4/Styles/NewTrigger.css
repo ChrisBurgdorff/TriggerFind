@@ -1,0 +1,115 @@
+﻿body {
+}
+
+#topBar {
+  width: 100%;
+  text-align: center;
+}
+
+#topBar h1 {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 1.5em;
+}
+
+#leftBar {
+    width: 300px;
+    float: left;
+    margin-bottom: 120px;
+  text-align: center;
+}
+
+#leftBar h2 {
+  font-size: 26px;
+}
+
+#leftBar ul {
+  margin-bottom: 12px;
+}
+
+#leftBar .btn {
+    margin-bottom: 35px;
+}
+
+.norm {
+     border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+#mainBar {
+    float: right;
+    margin-bottom: 120px;
+    width: -moz-calc(100% - 310px);
+    width: -webkit-calc(100% - 310px);
+    width: calc(100% - 310px);
+}
+
+.clearFix {
+    clear: both;
+}
+
+#newContent {
+  margin-top: 120px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-size: 22px;
+  line-height: 2.5em;
+	font-style: normal;
+	font-variant: normal;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.contentWrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#registerDiv {
+    float: left;
+    border: 2px solid grey;
+    margin: 0 5px 75px 100px;
+    padding: 30px 100px
+}
+
+#loginDiv {
+    float: right;
+    border: 2px solid grey;
+    padding: 30px 100px;
+}
+
+.textBox {
+    width: 250px;
+}
+
+.padded {
+    text-align: center;
+    padding: 10px;
+}
+
+.padded h2 {
+    font-size: 28px;
+    font-weight: bold;
+}

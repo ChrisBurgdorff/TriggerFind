@@ -1,0 +1,287 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="/Styles/trigger.css" rel="stylesheet" type="text/css">
+    <title>Trigger Find</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/JS/triggerfind2.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-67269200-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <div id="contactBox" class="popup">
+        <div id="contactWrapper">
+            <div id="contactContainer">
+                <img src="http://www.triggerfind.com/images/x.png" id="closeContact">
+                <h2>We Want To Hear From You</h2>
+                <br>
+                <p>Email: <a href="mailto:contact@triggerfind.com">Contact@TriggerFind.com</a></p>
+                <br>
+                <br>
+                <form id="contactForm" method="post" name="contact_form"
+                      action="/triggercontact.php">
+                    <p>Email Address:</p>
+                    <input type="text" name="email" id="email">
+                    <br>
+                    <p>Message:</p>
+                    <textarea rows="4" columns="55" name="message" id="message"></textarea>
+                    <br>
+                    <br>
+                    <input id="submitContact" class="btn" type="submit" value="Submit">
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="aboutBox" class="popup">
+        <div id="aboutWrapper">
+            <div id="aboutContainer">
+                <img src="http://www.triggerfind.com/images/x.png" id="closeAbout">
+                <h2>About Trigger Find</h2>
+                <p>The faster you know what your target accounts are doing, the faster you can offer them something of value! TriggerFind lets you enter a company name, select a key trigger event, and immediately receive current, business-specific results! </p>
+            </div>
+        </div>
+    </div>
+    <div class="fullMenu">
+        <ul id="menuList">
+            <li><a href="/Index.html">Home</a></li>
+            <li id="about">About</li>
+            <li><a href="/Blog/Blog.aspx">Blog</a></li>
+            <li id="contact">Contact</li>
+        </ul>
+    </div>
+    <div id="menuBar">
+        <a href="#"><h1 id="title">Trigger Find</h1></a>
+        <h2 id="tagline">
+            Free, Business-Only News About Your Customers And Prospects
+        </h2>
+        <img src="http://www.triggerfind.com/images/menu.png" id="menuImage">
+    </div>
+    <div id="content">
+        <div id="landing">
+            <table id="landingTablePhone">
+                <tr>
+                    <td>
+                        <a href="#steps"><img src="http://www.triggerfind.com/images/mag_glass.png"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Find The News YOU Need About YOUR Customers</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="http://www.triggerfind.com/images/bbell.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Custom Alerts - Be The First To Know (Coming Soon)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="http://www.triggerfind.com/images/money.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="steps"><p>Close More Sales With More Information</p></div>
+                    </td>
+                </tr>
+            </table>
+            <table id="landingTable">
+                <tr>
+                    <td>
+                        <img src="http://www.triggerfind.com/images/mag_glass.png">
+                    </td>
+                    <td>
+                        <img src="http://www.triggerfind.com/images/bbell.png">
+                    </td>
+                    <td>
+                        <img src="http://www.triggerfind.com/images/money.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Find The News YOU Need About YOUR Customers</p>
+                    </td>
+                    <td>
+                        <p>Custom Alerts - Be The First To Know (Coming Soon)</p>
+                    </td>
+                    <td>
+                        <p>Close More Sales With More Information</p>
+                    </td>
+            </table>
+        </div>
+        <h2 class="steps">Select a Trigger: </h2>
+        <table id="triggerTableTablet">
+            <tr>
+                <td>
+                    <button class="hiring">Hiring</button>
+                </td>
+                <td>
+                    <button class="merger">Merger/Acquisition</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="sales">Sales Growth</button>
+                </td>
+                <td>
+                    <button class="contracts">Contracts</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="training">Training</button>
+                </td>
+                <td>
+                    <button class="location">New Office/Location</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="cfo">CFO Leaving</button>
+                </td>
+                <td>
+                    <button class="all">All Triggers</button>
+                </td>
+            </tr>
+        </table>
+        <table id="triggerTablePhone">
+            <tr>
+                <td>
+                    <button class="hiring">Hiring</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="merger">Merger/Acquisition</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="sales">Sales Growth</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="contracts">Contracts</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="training">Training</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="location">New Office/Location</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="cfo">CFO Leaving</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="all">All Triggers</button>
+                </td>
+            </tr>
+        </table>
+        <table id="triggerTable">
+            <tr>
+                <td>
+                    <button class="hiring">Hiring</button>
+                </td>
+                <td>
+                    <button class="merger">Merger/Acquisition</button>
+                </td>
+                <td>
+                    <button class="sales">Sales Growth</button>
+                </td>
+                <td>
+                    <button class="contracts">Contracts</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="training">Training</button>
+                </td>
+                <td>
+                    <button class="location">New Office/Location</button>
+                </td>
+                <td>
+                    <button class="cfo">CFO Leaving</button>
+                </td>
+                <td>
+                    <button class="all">All Triggers</button>
+                </td>
+            </tr>
+        </table>
+        <h2 class="steps">Search:</h2>
+        <div id="searchInputs">
+            <input type="text" placeholder="Name of Company" id="search">
+            <button id="searchBtn"></button>
+        </div>
+    </div>
+    <div id="searchStuff">
+        <div class="loader">Loading!</div>
+        <br>
+        <br>
+        <br>
+        <p class="loading">The Results Are Loading...</p>
+        <div id="nothing"></div>
+        <div id="alerts"></div>
+        <ul id="results"></ul>
+        <div id="newSearch"></div>
+    </div>
+    <div id="sidebar">
+        <a href="http://whatshouldibuy.com"><img src="http://www.whatshouldibuy.com/images/bannersquare.jpg"></a>
+        <div class="fakead"></div>
+        <div id="mailingBox" class="slideup">
+            <div id="mailingWrapper">
+                <div id="mailingContainer">
+                    <h2>Sign Up For A Free White Paper On The Best Sales Triggers</h2>
+                    <form id="mailingList" method="post" name="mailing_list" action="/mailinglist.php">
+                        <br>
+                        Email Address:
+                        <input type="text" name="emaillist" id="emaillist">
+                        <br><br>
+                        <input id="submitMailing" class="btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="footer">
+        Get In Touch
+        <br>
+        <a href="mailto:contact@triggerfind.com">Facebook</a>
+        <a href="mailto:contact@triggerfind.com">Twitter</a>
+        <a href="mailto:contact@triggerfind.com">LinkedIn</a>
+        <a href="mailto:contact@triggerfind.com">Email</a>
+        <br>
+        <a href="Admin/ViewPosts.aspx"><h3>&copy; 2015 TriggerFind.com</h3></a>
+    </div>
+</body>
+</html>
